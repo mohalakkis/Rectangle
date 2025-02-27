@@ -1,17 +1,19 @@
 public class Rectangle {
     private final double width;
     private final double heigth;
+    private final double square;
 
     public Rectangle(double width, double heigth) {
         this.heigth = heigth;
         this.width = width;
+        square = width*heigth;
     }
 
     public Rectangle(double width) {
         this(width, width);
     }
-    public double square() {
-        return width*heigth;
+    public double Square() {
+        return square;
     }
 
     public double getHeigth() {
